@@ -4,8 +4,8 @@
   align-items: center;
   padding: 0.5rem;
   margin: 1rem 0;
-  background-color: #4b4b4b;
-  
+  background: linear-gradient(160deg, #333333, #fff, #76ccb1);
+
 }
 
 .expense-item__description {

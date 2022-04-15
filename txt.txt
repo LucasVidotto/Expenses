@@ -1,0 +1,9 @@
+guia
+
+
+js array map -> array integrado;
+
+
+{<Card />, <Card />} => função para renderizar, lado a lado;
+
+prevExpenses => obetem os dados mais recentes;

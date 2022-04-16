@@ -7,3 +7,38 @@ js array map -> array integrado;
 {<Card />, <Card />} => função para renderizar, lado a lado;
 
 prevExpenses => obetem os dados mais recentes;
+
+
+expressões ternarios ( : ? ) -> comparações com dois pontos e interrogação;
+
+
+
+
+
+
+
+{/* {filteredExpenses.length == 0 ? (<div className='center'><p> No Expensesfound.</p></div>) :
+          (
+            filteredExpenses.map(expense =>
+              <ExpenseItem
+                key={expense.id}
+                title={expense.title}
+                amount={expense.amount}
+                date={expense.date}
+              />
+            )
+          )
+        } */}
+
+    {/* {filteredExpenses.length === 0 && (<div className='center'><p> No Expensesfound.</p></div>)}
+        {filteredExpenses.length > 0 &&
+          (filteredExpenses.map(expense =>
+            <ExpenseItem
+              key={expense.id}
+              title={expense.title}
+              amount={expense.amount}
+              date={expense.date}
+            />
+          )
+          )
+        } */}

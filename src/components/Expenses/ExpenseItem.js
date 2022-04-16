@@ -8,15 +8,17 @@ function ExpenseItem(props) {
   
     console.log('ok'); */
   return (
-    <Card className='expense-item'>
-      <ExpenseDate date={props.date} />
-      <div className='expense-item__description'>
-        <h2>{props.title}</h2>
-        <div className='expense-item__price'>
-          ${props.amount}
+    <li>
+      <Card className='expense-item'>
+        <ExpenseDate date={props.date} />
+        <div className='expense-item__description'>
+          <h2>{props.title}</h2>
+          <div className='expense-item__price'>
+            ${props.amount}
+          </div>
         </div>
-      </div>
-    </Card>
+      </Card>
+    </li>
   );
 }
 export default ExpenseItem;

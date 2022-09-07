@@ -1,7 +1,11 @@
 import React, { useState } from 'react';
 import Expenses from './components/Expenses/Expenses';
+import Login from './components/Login/Login';
+import Teste from './components/Login/Teste';
 import NewExpense from './components/NewExpense/NewExpense';
 import Context from './components/Context/Context';
+
+import Routers from './router';
 import Counter from './components/Context/Counter';
 
 const DUMMY_EXPENSES = [
@@ -31,7 +35,7 @@ const DUMMY_EXPENSES = [
   },
 ];
 function App() {
-  const [total, setTotal] = useState(0);
+  const [total, setTotal] = useState('Nome');
   const [expenses, setExpenses] = useState(DUMMY_EXPENSES);
 
   const addExpenseHandler = (expense) => {
@@ -55,10 +59,14 @@ function App() {
     < Context.Provider value={[total, setTotal]} >
       <div>
         <p>App.js: {total}</p>
-        <p> DevMedia Context API</p>
-        <Counter />
+        <p> Conunter.js :  <Counter /></p>
+
       </div>
     </Context.Provider >
+    /* < div >
+      <Login />
+      <Teste />
+    </div > */
   );
 }
 
